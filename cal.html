@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    #clear{
+        width: 188px;
+        background-color:red
+    }
+    input{
+        width: 60px;
+    }
+    #first{
+        width: 180px;
+    }
+    #myform{
+        border: 30px;
+    }
+    #mydiv{
+        background-color: aqua;
+        width: 190px;
+    }
+    </style>
+
+
+<center>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <div id="mydiv">
+
+    <form id="myform">
+<input type="text" name="all" id="first"><br /><br />
+<input type="button" value="1" onclick="myform.all.value +='1'">
+<input type="button" value="2" onclick="myform.all.value +='2'">
+<input type="button" value="3" onclick="myform.all.value +='3'"><br /><br />
+
+<input type="button" value="4" onclick="myform.all.value +='4'">
+<input type="button" value="5" onclick="myform.all.value +='5'">
+<input type="button" value="6" onclick="myform.all.value +='6'"><br /><br />
+
+<input type="button" value="7" onclick="myform.all.value +='7'">
+<input type="button" value="8" onclick="myform.all.value +='8'">
+<input type="button" value="9" onclick="myform.all.value +='9'"><br /><br />
+
+<input type="button" value="+" onclick="myform.all.value +='+'">
+<input type="button" value="-" onclick="myform.all.value +='-'">
+<input type="button" value="*" onclick="myform.all.value +='*'"><br /><br />
+
+
+<input type="button" value="/" onclick="myform.all.value +='/'">
+<input type="button" value="0" onclick="myform.all.value +='0'">
+<input type="button" value="=" onclick="myform.all.value = eval(myform.all.value) ">  <br /><br />
+
+<input type="button" value="clear All" onclick="myform.all.value =' ' " id="clear">
+</center>
+      </form>
+   </div>
+</body>
+</html>
